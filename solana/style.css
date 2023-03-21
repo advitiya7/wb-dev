@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:whitesmoke;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    
+
+  }
+  
+  #PublicKey,
+  #amount,
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  

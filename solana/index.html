@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Send Tokens</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sol.js"></script>
+  </head>
+  <body>
+    <form id="sendTokensForm">
+      <label for="PublicKey"> Public Key:</label>
+      <input type="text" id="PublicKey" required><br>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" required><br>
+
+      <label for="tokenSelect">Select Token:</label>
+      <select id="tokenSelect" required>
+        <option value="">Select a Token</option>
+        <option value="SOL">SOL</option>
+        <option value="USDC">USDC</option>
+        <!-- Add more token options as needed -->
+      </select><br>
+
+      <input type="submit" value="Send Tokens">
+    </form>
+  </body>
+</html>
