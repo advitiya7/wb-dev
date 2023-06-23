@@ -1,0 +1,101 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: rgb(50 26 63);
+  padding: 15px;
+  z-index: 99;
+}
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: salmon;
+  text-decoration: none;
+}
+
+
+
+.item a,
+.item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+.item {
+  font-size: 12px;
+}
+.item a:hover
+ {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(238, 160, 152);
+  
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #783187;
+  cursor: pointer;
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background:rgb(238, 160, 152);
+
+}
+ul{
+  margin: 23px 19px;
+}
+ul li{
+  list-style-type: none;
+  font-size: 3rem;
+}
+ul li a{
+  margin: 36px -11px;
+  
+}
+.main h1 {
+  color:#487c7c;
+  font-size: 40px;
+  text-align: center;
+}
